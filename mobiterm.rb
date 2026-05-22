@@ -4,7 +4,7 @@
 class Mobiterm < Formula
   desc "A mobile-first web terminal for remote access from any device."
   homepage "https://github.com/lampstand-labs/mobiterm"
-  version "0.2.0"
+  version "0.2.1"
 
   livecheck do
     url :stable
@@ -13,23 +13,23 @@ class Mobiterm < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lampstand-labs/mobiterm/releases/download/v0.2.0/mobiterm-darwin-x64.tar.gz"
-      sha256 "9a87bc69a8b4eb24981b25606bc7239366eb6be2796425b0f7776ca3768ad511"
+      url "https://github.com/lampstand-labs/mobiterm/releases/download/v0.2.1/mobiterm-darwin-x64.tar.gz"
+      sha256 "4f1946a51625e403636594761c52eff5938f6fd13a3bffa2ec35f800398da715"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lampstand-labs/mobiterm/releases/download/v0.2.0/mobiterm-darwin-arm64.tar.gz"
-      sha256 "074f9138ee1e817e7d190a9876ce7abd1f0f3579781d3a7da523326b8e6693bc"
+      url "https://github.com/lampstand-labs/mobiterm/releases/download/v0.2.1/mobiterm-darwin-arm64.tar.gz"
+      sha256 "65f6e97e175283e8c348044e31d22122ec251f527ac54ed138a768ba2fced354"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lampstand-labs/mobiterm/releases/download/v0.2.0/mobiterm-linux-x64-gnu.tar.gz"
-      sha256 "03b2681f4ae49e865efb76616443139ac480de438b0133b649dfc7ecfb6e2b4c"
+      url "https://github.com/lampstand-labs/mobiterm/releases/download/v0.2.1/mobiterm-linux-x64-gnu.tar.gz"
+      sha256 "f9d14cdb7b4bc7653b24e749ef95756e10fd3da79ffdbed36069db6cf5021c4a"
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lampstand-labs/mobiterm/releases/download/v0.2.0/mobiterm-linux-arm64-gnu.tar.gz"
-      sha256 "bc89664d7210b9d842e5e6cb2132f173b37b227833f041090d07c60e5f365dda"
+      url "https://github.com/lampstand-labs/mobiterm/releases/download/v0.2.1/mobiterm-linux-arm64-gnu.tar.gz"
+      sha256 "f369cfec4c996d1cfaefa241463107161a21dcd32557f233d7b989cb08f40b0e"
     end
   end
 
